@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #main {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(pexels-pixabay-531880.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+  .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+  }
+  .text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+  }
+  .text .image {
+    background-image: url(Kedarnath-Temple-History-Timings-Best-Time-to-Visit.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+  }
+  .rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rtext p {
+    font-size: 12px;
+  }
+  .bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+  }
+  .b1 {
+    width: 30%;
+    max-width: inherit;
+    background-image: url(https://images.unsplash.com/photo-1716984157551-cfca8e4d1b2f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  }
+  .b1 h1 {
+    text-align: center;
+    padding: 30px;
+  }
+  .b1 p {
+    color: rgb(20, 79, 227);
+    text-align: center;
+    padding: 15px;
+  }
+  .b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.economictimes.com%2Fnews%2Fpolitics-and-nation%2Fno-positive-outcome-of-talks-with-amit-shah-and-mha-officials-ladakh-bodies%2Farticleshow%2F108212438.cms&psig=AOvVaw2Zn_cf7wGMSjL95wX995-3&ust=1717839085677000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDsgrGXyYYDFQAAAAAdAAAAABAE);
+    background-size: cover;
+    background-position: center;
+  }
+  .b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+  }
+  .b2 .up p {
+    color: rgb(0, 255, 255);
+    text-align: center;
+    padding: 15px;
+  }
+  .b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1716831313355-f45883ac3d69?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  }
+  .b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    text-align: center;
+  }
+  .b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.oyorooms.com%2Ftravel-guide%2Fthings-to-do-in-ladakh%2F&psig=AOvVaw2Zn_cf7wGMSjL95wX995-3&ust=1717839085677000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDsgrGXyYYDFQAAAAAdAAAAABAK);
+    background-size: cover;
+    background-position: center;
+  }
+  .b3 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 80%;
+    height: 100%;
+    padding: 4vh 3vh;
+    text-align: center;
+    text-shadow: 80%;
+  }
+  .b3 .overlay p {
+    padding: 1.2vh;
+  }
+  @media (max-width: 700px) {
+    .rtext {
+      flex-direction: column;
+    }
+    .b3 .overlay {
+      width: 100%;
+      margin-left: initial;
+    }
+  }
+  @media (max-width: 500px) {
+    .text {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .text h1 {
+      font: 5vh;
+    }
+    .text .image {
+      height: 200px;
+      width: 140px;
+      margin-top: 10px;
+    }
+    .rtext {
+      flex-direction: colum;
+      align-items: flex-start;
+    }
+    .rtext p {
+      margin-top: 10px;
+    }
+    .icons {
+      margin-top: 10px;
+    }
+    .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .b1 {
+      width: 100%;
+      min-height: 30vh;
+    }
+    .b2 {
+      width: 100%;
+    }
+    .b2 up {
+      min-height: 40vh;
+    }
+    .b3 {
+      width: 100%;
+      background-position: left;
+    }
+  }
